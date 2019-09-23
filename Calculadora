@@ -1,0 +1,29 @@
+import java.util.*;
+public class Principal {
+    public static void main(String args[]) {
+        Scanner Leia=new Scanner(System.in);
+        System.out.println("Digite o primeiro número: ");
+        double x=Leia.nextDouble();
+        System.out.println("Digite o segundo número: ");
+        double y=Leia.nextDouble();
+        System.out.println("1-Somar");
+        System.out.println("2-Subtrair");
+        System.out.println("3-Multiplicar");
+        System.out.println("4-Dividir");
+        System.out.println("Digite o número da opção desejada: ");
+        int opcao=Leia.nextInt();
+        switch (opcao) {
+            case 1: {double total=x+y; System.out.println("A soma é: "+total);}
+            return;
+            case 2: {double total=x-y; System.out.println("A subtração é: "+total);}
+            return;
+            case 3: {double total=x*y; System.out.println("A multiplicação é: "+total);}
+            return;
+            case 4: {double total=x/y; System.out.println("A divisão é: "+total);}
+            return;
+            default:{System.out.println("Opção Inextistente");}
+            return;
+
+        }
+    }
+}
